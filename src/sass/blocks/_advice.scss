@@ -1,0 +1,31 @@
+.advice {
+	min-height: 680px;
+	padding: 100px 0 10px 0;
+	background-image: url("../images/advice_bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 150%;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	&__comment {
+		max-width: 473px;
+		margin-top: 8px;
+		font-weight: 500;
+		font-size: 20px;
+		//line-height: 150%;
+		color: #fff;
+	}
+
+}
