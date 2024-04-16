@@ -91,9 +91,9 @@
     <!--    <div class="advice__wrapper">-->
     <h2 class="title title_left">Получите бесплатную консультацию по подбору пульсометра </h2>
     <div class="advice__comment">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</div>
-    <form action="#" class="contact__form">
+    <form id="consultation-form" class="contact__form">
       <input type="text" name="name" placeholder="Ваше имя" required>
-      <input type="number" name="tel" placeholder="Ваш телефон" required>
+      <input name="phone" placeholder="Ваш телефон" required>
       <input type="email" name="email" placeholder="Ваш email" required>
       <button class="button button_submit">заказать консультацию</button>
     </form>
@@ -513,9 +513,9 @@
     <h2 class="modal__subtitle">Просто заполните форму заявки</h2>
     <div class="modal__desc">и мы перезвоним вам в течении 10 минут</div>
     <form action="#" class="contact__form">
-      <input type="text" name="name" placeholder="Ваше имя" required>
-      <input type="number" name="tel" placeholder="Ваш телефон" required>
-      <input type="email" name="email" placeholder="Ваш email" required>
+      <input type="text" name="name" placeholder="Ваше имя">
+      <input name="phone" placeholder="Ваш телефон">
+      <input type="email" name="email" placeholder="Ваш email">
       <button class="button button_submit">заказать консультацию</button>
     </form>
   </div>
@@ -525,7 +525,7 @@
     <div class="modal__desc">Пульсометр Polar FT1</div>
     <form action="#" class="contact__form">
       <input type="text" name="name" placeholder="Ваше имя" required>
-      <input type="number" name="tel" placeholder="Ваш телефон" required>
+      <input name="phone" placeholder="Ваш телефон" required>
       <input type="email" name="email" placeholder="Ваш email" required>
       <button class="button button_submit">купить</button>
     </form>
@@ -543,6 +543,8 @@
 
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>-->
 <script src="js/jquery_tab.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedInput.min.js"></script>
 <script src="js/tiny-slider.js"></script>
 <script src="js/script.js"></script>
 </body>

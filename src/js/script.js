@@ -79,5 +79,70 @@ $(document).ready(function () {
             $('.overlay, #order').fadeIn('slow');
         });
     });
+
+    // Validate Forms
+
+    // $('#consultation-form').validate();
+
+    // $('#consultation form').validate({
+    //     rules: {
+    //         name: {
+    //             required: true,
+    //             minlength: 2
+    //         },
+    //         phone: "required",
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         }
+    //     },
+    //     messages: {
+    //         name: {
+    //             required: "Введите ваше имя!",
+    //             minlength: jQuery.validator.format("Имя должно состоять из минимум {0} символов!")
+    //         },
+    //         phone: "Введите номер телефона для связи с вами!",
+    //         email: {
+    //             required: "На нужена ваша почта, чтобы связаться с вами!",
+    //             email: "Правильный формат почты: name@domain.com"
+    //         }
+    //     }
+    // });
+
+    // $('#order form').validate();
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Введите ваше имя!",
+                    minlength: jQuery.validator.format("Имя должно состоять из минимум {0} символов!")
+                },
+                phone: "Введите номер телефона для связи с вами!",
+                email: {
+                    required: "На нужена ваша почта, чтобы связаться с вами!",
+                    email: "Правильный формат почты: name@domain.com"
+                }
+            }
+        });
+    }
+
+    validateForms('#consultation form');
+    validateForms('#consultation-form');
+    validateForms('#order form');
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
+
 });
 

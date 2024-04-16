@@ -47,6 +47,17 @@
 	&__mini {
 		min-height: 143px;
 	}
+
+	.error {
+		border: 2px solid $main-color;
+	}
+
+	label.error {
+		margin-left: 5px;
+		margin-top: 8px;
+		border: none;
+		font-size: 13px;
+	}
 }
 
 #consultation, #order, #thanks {
