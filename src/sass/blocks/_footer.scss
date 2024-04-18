@@ -2,6 +2,15 @@
 	height: 630px;
 	position: relative;
 
+	&__map {
+		//position: relative;
+		iframe {
+			width: 100%;
+			height: 630px;
+			border: none;
+		}
+	}
+
 	&__info {
 		width: 480px;
 		height: 270px;
@@ -37,7 +46,7 @@
 		justify-content: center;
 		margin-top: 36px;
 
-		&-item{
+		&-item {
 			display: flex;
 			justify-content: center;
 			align-items: center;

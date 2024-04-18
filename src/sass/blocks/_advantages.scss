@@ -28,4 +28,14 @@
 			line-height: 129%;
 		}
 	}
+
+	&__icon {
+		&_animated {
+			animation: heardbeat 1.5s ease infinite;
+			//animation-name: heardbeat;
+			//animation-duration: 1.5s;
+			//animation-timing-function: ease;
+			//animation-iteration-count: infinite;
+		}
+	}
 }
